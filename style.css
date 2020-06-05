@@ -376,10 +376,12 @@ a {
   color: #747fe0;
 }
 
-.project-description {
+.project-description,
+.sm-none {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   align-items: center;
   width: 75%;
 }
