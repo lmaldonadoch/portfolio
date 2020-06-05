@@ -16,7 +16,6 @@ I used state-of-the-art front end design tools such as CSS animations and transi
 
 ## Built With
 
-- Bootstrap
 - HTML
 - CSS
 - Google fonts
