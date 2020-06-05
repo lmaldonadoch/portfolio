@@ -1,0 +1,494 @@
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  color: #f6f9fc;
+  text-decoration: none;
+}
+
+.blue {
+  color: #747fe0;
+}
+
+body {
+  color: #3c3f42;
+  background: #f6f9fc;
+  font-family: "Muli", sans-serif;
+  font-size: 20px;
+}
+
+.big {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+nav {
+  padding: 20px 0 0 30px;
+  box-shadow: -2px -2px 8px rgba(7, 8, 9, 0.7);
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px 20px 20px 0;
+  background: #747fe0;
+}
+
+nav a {
+  color: #f6f9fc;
+}
+
+.nav-links {
+  display: flex;
+  width: 100%;
+  max-width: 500px;
+  justify-content: space-between;
+  align-content: center;
+  padding-top: 10px;
+}
+
+.nav-link {
+  position: relative;
+  transform: translate(-50%, -50%);
+  padding: 5px 10px;
+}
+
+.nav-link:hover {
+  color: #3c3f42;
+}
+
+.nav-link:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #30e6cd;
+  z-index: -1;
+  transition: transform 0.3s;
+  transform-origin: bottom right;
+  transform: scale(0);
+}
+
+.nav-link:hover:before {
+  transition: transform 0.3s;
+  transform-origin: top left;
+  transform: scale(1);
+}
+
+.nav-link:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: 2px solid #30e6cd;
+  z-index: -1;
+  transition: transform 0.3s;
+  transform-origin: top left;
+  transform: scale(1);
+}
+
+.nav-link:hover:after {
+  transition: transform 0.3s;
+  transform-origin: bottom right;
+  transform: scale(0);
+}
+
+.hidden {
+  display: none;
+}
+
+main {
+  padding: 50px 0;
+}
+
+section {
+  margin-bottom: 50px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto 75px;
+  line-height: 35px;
+  box-shadow: -2px -2px 8px rgba(7, 8, 9, 0.5);
+  padding: 25px 0;
+}
+
+.main-content-wrapper {
+  width: fit-content;
+  margin: auto;
+}
+
+.social {
+  display: inline-block;
+  margin: 3px;
+}
+
+h2,
+.about-me,
+.social,
+.indented {
+  letter-spacing: 2px;
+  width: fit-content;
+}
+
+.about-me,
+.indented,
+.social {
+  font-size: 1rem;
+}
+
+.about-me,
+.indented,
+main h3 {
+  padding-left: 50px;
+}
+
+.def-initialize {
+  padding-left: 100px;
+}
+
+.indented {
+  padding-left: 100px;
+}
+
+.linkedin {
+  border: #0e76a8 2px solid;
+  background: linear-gradient(45deg, transparent 50%, #0e76a8 50%);
+}
+
+.github {
+  border: #070809 2px solid;
+  background: linear-gradient(45deg, transparent 50%, #070809 50%);
+}
+
+.email {
+  border: #d44638 2px solid;
+  background: linear-gradient(45deg, transparent 50%, #d44638 50%);
+}
+
+.social-link {
+  padding: 3px 7px;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: #070809;
+  position: relative;
+}
+
+.linkedin:after {
+  background: linear-gradient(45deg, #0e76a8 50%, transparent 50%);
+}
+
+.github:after {
+  background: linear-gradient(45deg, #070809 50%, transparent 50%);
+}
+
+.email:after {
+  background: linear-gradient(45deg, #d44638 50%, transparent 50%);
+}
+
+.social-link:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+}
+
+.social-link,
+.social-link:after {
+  background-size: 300%;
+  background-position: 100%;
+  transition: 1s;
+}
+
+.social-link:hover,
+.social-link:hover:after {
+  background-position: 0;
+}
+
+.github:hover {
+  -webkit-text-fill-color: #f6f9fc;
+}
+
+.title,
+.subtitle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 75px;
+  justify-content: space-evenly;
+}
+
+.horizontal-blue {
+  width: 150px;
+  border: #747fe0 2px solid;
+}
+
+a {
+  color: #3c3f42;
+}
+
+.swiper-container {
+  width: 100%;
+  max-width: 1200px;
+  overflow: hidden;
+  padding-top: 50px;
+  padding-bottom: 200px;
+  margin-bottom: 50px;
+}
+
+.swiper-slide {
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 400px;
+  -webkit-box-reflect: below 1px
+    linear-gradient(transparent, transparent, #747fe0);
+  background: #f6f9fc;
+  padding: auto 40px;
+}
+
+.subtitle {
+  align-items: flex-start;
+  padding-left: 30px;
+}
+
+.card {
+  position: relative;
+  box-shadow: -2px -2px 8px rgba(7, 8, 9, 0.5);
+  padding: auto 20px;
+}
+
+.card-title,
+.card-footer {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 900;
+  font-size: 1.3rem;
+  text-align: center;
+}
+
+.card-image {
+  height: 300px;
+  width: 260px;
+  margin: auto;
+}
+
+.card-footer {
+  font-weight: 400;
+}
+
+.newsweek .card-image {
+  background: url(images/screenshot1.png) no-repeat center center;
+  background-size: cover;
+}
+
+.capstone .card-image {
+  background: url(images/screenshot2.png) no-repeat center center;
+  background-size: cover;
+}
+
+.linter .card-image {
+  background: url(images/ruby-linter.gif) no-repeat center center;
+  background-size: cover;
+}
+
+.tictactoe .card-image {
+  background: url(images/screenshot04.png) no-repeat center center;
+  background-size: cover;
+}
+
+.socialnetwork .card-image {
+  background: url(images/screenshot07.png) no-repeat center center;
+  background-size: cover;
+}
+
+.motorista .card-image {
+  background: url(images/motorista.png) no-repeat center center;
+  background-size: cover;
+}
+
+.project-wrapper {
+  display: flex;
+  align-items: center;
+  padding: 25px 50px;
+  margin: 100px auto 0;
+  box-shadow: -5px -5px 8px rgba(116, 127, 224, 0.5) /*rgba(7, 8, 9, 0.5); */;
+  height: auto;
+  width: 95%;
+  max-width: 1200px;
+}
+
+.horizontal-gray {
+  border: #3c3f42 1px solid;
+  width: 100px;
+}
+
+.project-title {
+  margin: 0 0 15px;
+  padding: 0;
+}
+
+.project-title a {
+  color: #3c3f42;
+}
+
+.project-wrapper p {
+  margin-top: 30px;
+  width: 100%;
+  text-align: justify;
+}
+
+.project p a {
+  color: #747fe0;
+}
+
+.project-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 75%;
+}
+
+.project-image {
+  width: 100%;
+  height: 95%;
+  margin-left: 20px;
+}
+
+.project-linter .project-image {
+  background: url(images/ruby-linter.gif) no-repeat center center;
+  background-size: contain;
+}
+
+.project-socailmedia .project-image {
+  background: url(images/screenshot07.png) no-repeat center center;
+  background-size: contain;
+}
+
+.project-newsweek .project-image {
+  background: url(images/screenshot1.png) no-repeat center center;
+  background-size: contain;
+}
+
+.project-motorista .project-image {
+  background: url(images/motorista.png) no-repeat center center;
+  background-size: contain;
+}
+
+.project-capstone .project-image {
+  background: url(images/screenshot2.png) no-repeat center center;
+  background-size: contain;
+}
+
+.project-image {
+  min-height: 600px;
+  height: 100%;
+}
+
+.project-links {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  color: #f6f9fc;
+}
+
+.project-link-container {
+  background: #30e6cd;
+  border-radius: 25px;
+  padding: 5px 15px;
+}
+
+.built-with {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.language-box {
+  border: #30e6cd solid 2px;
+  padding: 5px 15px;
+  margin: 10px;
+}
+
+.about-me-content {
+  line-height: 1.8rem;
+  margin: 30px auto;
+  width: 90%;
+  max-width: 1200px;
+}
+
+.resume {
+  position: relative;
+  margin-bottom: 1200px;
+}
+
+.resume_pdf {
+  position: absolute;
+  top: 100px;
+  margin: auto;
+  border: none;
+  width: 90%;
+  max-width: 950px;
+  min-height: 1150px;
+}
+
+.social_container {
+  margin: 30px auto !important;
+  display: flex;
+  width: 90%;
+  max-width: 500px;
+  font-size: 2.5rem;
+  justify-content: space-between;
+  margin: 25px 0;
+}
+
+.social_container i {
+  transition-property: all;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in-out;
+}
+
+.social_container .fa-facebook-square:hover {
+  color: #3b5998;
+}
+
+.social_container .fa-twitter:hover {
+  color: #00acee;
+}
+
+.social_container .fa-linkedin-in:hover {
+  color: #0e76a8;
+}
+
+.social_container .fa-github:hover {
+  color: #30e6cd;
+}
+
+.social_container .fa-envelope:hover {
+  color: #d44638;
+}

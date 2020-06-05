@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Muli:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Luis A. Maldonado Chávez</title>
+  </head>
+  <body>
+    <h1 class="hidden">Luis Angel Maldonado</h1>
+    <div class="container">
+      <header>
+        <nav class="navbar">
+          <div class="nav-links">
+            <div class="nav-link-container">
+              <a href="#projects" class="nav-link">Projects</a>
+            </div>
+            <div class="nav-link-container">
+              <a href="#aboutme" class="nav-link">About me</a>
+            </div>
+            <div class="nav-link-container">
+              <a href="#resume" class="nav-link">Resume</a>
+            </div>
+            <div class="nav-link-container">
+              <a href="#contact" class="nav-link">Contact</a>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <main>
+        <div class="content">
+          <div class="main-content-wrapper">
+            <h2 class="name">
+              class SoftwareDeveloper
+            </h2>
+            <p class="about-me"></p>
+            <h3>def initialize</h3>
+            <div class="def-initialize">
+              @name =
+              <span class="blue big">'Luis Angel Maldonado Chávez'</span><br />
+              @skills = { <br />
+              <p class="indented">
+                'backend' => ['Ruby', 'Python', 'Node.js'] <br />'frontend' =>
+                ['HTML5', 'CSS3', 'JavaScript', SASS']<br />
+                'frameworks' => ['Rails', 'Bootstrap', 'React / Redux']
+                <br />}
+              </p>
+              <span class="social"
+                >@linkedin =
+                <a
+                  href="https://www.linkedin.com/in/lmaldonadoch/"
+                  class="linkedin social-link"
+                  >'Luis Angel Maldonado'</a
+                > </span
+              ><br />
+              <span class="social"
+                >@github =
+                <a
+                  href="https://github.com/lmaldonadoch"
+                  class="github social-link"
+                  >'lmaldonadoch'</a
+                > </span
+              ><br />
+              <span class="social"
+                >@email =
+                <a
+                  href="mailto: lmaldonadoch@gmail.com"
+                  class="email black social-link"
+                  >'lmaldonadoch@gmail.com'</a
+                >
+              </span>
+              <br />
+            </div>
+            <h3>end</h3>
+
+            <h2 class="name">
+              end
+            </h2>
+          </div>
+        </div>
+      </main>
+
+      <section class="projects" id="projects">
+        <a href="projects"></a>
+        <div class="title">
+          <h2 class="name">Projects</h2>
+
+          <hr class="horizontal-blue" />
+        </div>
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <a href="#motorista" class="card-link">
+                <div class="card motorista">
+                  <div class="card-title">Motorista Online Magazine</div>
+                  <div class="card-image"></div>
+                  <div class="card-footer">
+                    Rails｜Ruby｜Rspec｜Capybara｜SQL｜Bootstrap
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#socialnetwork" class="card-link">
+                <div class="card socialnetwork">
+                  <div class="card-title">Social Network</div>
+                  <div class="card-image"></div>
+                  <div class="card-footer">
+                    Rails｜Ruby｜Rspec｜Capybara｜SQL｜OOP
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#newsweek" class="card-link">
+                <div class="card newsweek">
+                  <div class="card-title">Newsweek Website Clone</div>
+                  <div class="card-image"></div>
+                  <div class="card-footer">Bootstrap｜HTML5｜CSS</div>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#capstone" class="card-link">
+                <div class="card capstone">
+                  <div class="card-title">Web Course Website</div>
+                  <div class="card-image"></div>
+                  <div class="card-footer">
+                    Bootstrap｜HTML5｜CSS｜<br />SASS
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#linter" class="card-link">
+                <div class="card linter">
+                  <div class="card-title">Ruby Style Autocorrector</div>
+                  <div class="card-image"></div>
+                  <div class="card-footer">Ruby｜RSpec｜OOP</div>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#tictactoe" class="card-link">
+                <div class="card tictactoe">
+                  <div class="card-title">Console Tic-Tac-Toe</div>
+                  <div class="card-image"></div>
+                  <div class="card-footer">Ruby｜Rspec｜OOP</div>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="swiper-pagination"></div>
+        </div>
+
+        <div class="project-wrapper project-motorista">
+          <div class="project-description">
+            <h3 class="project-title">
+              <a name="linter">Motorista Online Magazine</a>
+            </h3>
+            <hr class="horizontal-blue" />
+            <p class="project-paragraph">
+              This project is an online magazine featuring automotive articles,
+              from cars to motorcycles, racing, and off-road vehicles. It
+              features the creation and sign-in for users, article creation, and
+              visualization with images, functionality to vote for articles to
+              see them displayed in the featured section (topmost of the page).
+              User profile with all published articles and the most voted
+              article for this user. Search functionality on more!
+            </p>
+            <div class="built-with">
+              <div class="language-box">
+                Rails
+              </div>
+              <div class="language-box">
+                Ruby
+              </div>
+              <div class="language-box">
+                RSpec
+              </div>
+              <div class="language-box">
+                Capybara
+              </div>
+              <div class="language-box">
+                PostgreSQL
+              </div>
+              <div class="language-box">
+                Bootstrap
+              </div>
+              <div class="language-box">
+                SASS
+              </div>
+              <div class="language-box">
+                OOP
+              </div>
+            </div>
+            <div class="project-links">
+              <div class="project-link-container">
+                <a
+                  href="https://afternoon-dawn-70531.herokuapp.com/articles"
+                  class="video-link"
+                  ><i class="fas fa-external-link-alt"></i> Visit Website</a
+                >
+              </div>
+              <div class="project-link-container">
+                <a href="https://github.com/lmaldonadoch/motorista"
+                  ><i class="fab fa-github"></i> Project Source</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="project-image"></div>
+        </div>
+
+        <div class="project-wrapper project-socailmedia">
+          <div class="project-description">
+            <h3 class="project-title">
+              <a name="linter">Social Media Website</a>
+            </h3>
+            <hr class="horizontal-blue" />
+            <p class="project-paragraph">
+              Social Media Website with Facebook-like functionality, including
+              Friend Requests which the user can accept or deny, Posts, Comments
+              on Posts, and Likes on Posts. The main page is a timeline where
+              the user would see the authored Posts and Friends Posts only.
+            </p>
+            <div class="built-with">
+              <div class="language-box">
+                Rails
+              </div>
+              <div class="language-box">
+                Ruby
+              </div>
+              <div class="language-box">
+                RSpec
+              </div>
+              <div class="language-box">
+                Capybara
+              </div>
+              <div class="language-box">
+                SQL
+              </div>
+              <div class="language-box">
+                SASS
+              </div>
+              <div class="language-box">
+                OOP
+              </div>
+            </div>
+            <div class="project-links">
+              <div class="project-link-container">
+                <a
+                  href="https://murmuring-thicket-07012.herokuapp.com/users/sign_in"
+                  class="video-link"
+                  ><i class="fas fa-external-link-alt"></i> Visit Website</a
+                >
+              </div>
+              <div class="project-link-container">
+                <a href="https://github.com/shubham14p3/ror-social-scaffold"
+                  ><i class="fab fa-github"></i> Project Source</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="project-image"></div>
+        </div>
+
+        <div class="project-wrapper project-linter">
+          <div class="project-description">
+            <h3 class="project-title">
+              <a name="linter">Ruby Style Autocorrector</a>
+            </h3>
+            <hr class="horizontal-blue" />
+            <p class="project-paragraph">
+              This is a Lint that autocorrects style issues for Ruby code, built
+              with Ruby. It also alerts the user of some possible functionality
+              issues that might prevent the code from running as expected, such
+              as mismatching opening and closed blocks, or mismatching
+              parenthesis/brackets.
+              <a
+                href="https://github.com/lmaldonadoch/ruby-linter/blob/152e7d062f9eb20c31f7d66d65ea8cde07023ae1/lib/linterclass.rb#L48"
+                >Click here</a
+              >
+              to see some of the most clever lines of code!
+            </p>
+            <div class="built-with">
+              <div class="language-box">
+                Ruby
+              </div>
+              <div class="language-box">
+                RSpec
+              </div>
+              <div class="language-box">
+                OOP
+              </div>
+            </div>
+            <div class="project-links">
+              <div class="project-link-container">
+                <a
+                  href="https://www.loom.com/share/8ed1daec5d5d4845927a308a59c7326c"
+                  class="video-link"
+                  ><i class="fas fa-video"></i> Project video</a
+                >
+              </div>
+              <div class="project-link-container">
+                <a href="https://github.com/lmaldonadoch/ruby-linter"
+                  ><i class="fab fa-github"></i> Project Source</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="project-image"></div>
+        </div>
+
+        <div class="project-wrapper project-capstone">
+          <div class="project-description">
+            <h3 class="project-title">
+              <a name="newsweek">Online Course Website</a>
+            </h3>
+            <hr class="horizontal-blue" />
+            <p class="project-paragraph">
+              This project features a website for an imaginary online course. It
+              provides the structure of a complete website with a home page, an
+              index page, and a ticket-sales page. It is based on a design by
+              the amazing Cyndy Shin; you can access it
+              <a
+                href="https://www.behance.net/gallery/29845175/CC-Global-Summit-2015"
+                >here</a
+              >. It is built with state-of-the-art front end design tools like
+              CSS3, HTML5, Bootstrap, and SASS.
+            </p>
+            <div class="built-with">
+              <div class="language-box">
+                Bootstrap
+              </div>
+              <div class="language-box">
+                SASS
+              </div>
+              <div class="language-box">
+                HTML
+              </div>
+              <div class="language-box">
+                CSS
+              </div>
+            </div>
+            <div class="project-links">
+              <div class="project-link-container">
+                <a
+                  href="https://rawcdn.githack.com/lmaldonadoch/HTML-CSS-Capstone/998db4376c8aaebbb42587b026b43b38c7f9e6cc/index.html"
+                  class="video-link"
+                  ><i class="fas fa-external-link-alt"></i> Live Version</a
+                >
+              </div>
+              <div class="project-link-container">
+                <a href="https://github.com/lmaldonadoch/HTML-CSS-Capstone"
+                  ><i class="fab fa-github"></i> Project Source</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="project-image"></div>
+        </div>
+
+        <div class="project-wrapper project-newsweek">
+          <div class="project-description">
+            <h3 class="project-title">
+              <a name="newsweek">Newsweek Website Clone</a>
+            </h3>
+            <hr class="horizontal-blue" />
+            <p class="project-paragraph">
+              <a href="https://www.newsweek.com/">Newsweek</a> is a famous news
+              website which I replicated for this project. To achieve such
+              similarity I used Bootstrap along with HTML and CSS for the fine
+              details. The news featured were the most current news around
+              mid-April 2020.
+            </p>
+            <div class="built-with">
+              <div class="language-box">
+                Bootstrap
+              </div>
+              <div class="language-box">
+                HTML
+              </div>
+              <div class="language-box">
+                CSS
+              </div>
+            </div>
+            <div class="project-links">
+              <div class="project-link-container">
+                <a
+                  href="https://rawcdn.githack.com/lmaldonadoch/newsweek-clone/16a38cd0d7fc7fa9dbcc2856736ab434924eebe5/index.html"
+                  class="video-link"
+                  ><i class="fas fa-external-link-alt"></i> Live Version</a
+                >
+              </div>
+              <div class="project-link-container">
+                <a href="https://github.com/lmaldonadoch/newsweek-clone"
+                  ><i class="fab fa-github"></i> Project Source</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="project-image"></div>
+        </div>
+      </section>
+
+      <section class="aboutme" id="aboutme">
+        <a href="aboutme"></a>
+        <div class="title">
+          <h2 class="name">About me</h2>
+
+          <hr class="horizontal-blue" />
+        </div>
+
+        <div class="about-me-content">
+          <p class="project-paragraph about-me-paragraph">
+            If you are reading this, it means that you liked my projects, and I
+            am thrilled about that! So let me tell you a little bit about me; I
+            am a very passionate problem solver, I enjoy spending my free time
+            in Codewars or Hackerrank. I am a husband, son, brother, and dog
+            person. <br /><br />I have worked remotely for the last 3 years in
+            finance and interpreting. Working like that has developed in me a
+            rock-solid work ethic, responsibility, and punctuality. I have
+            managed teams of 15 people and I have experience in managing
+            projects and negotiating. Just below here is my detailed resume for
+            your kind consideration. I hope we can talk soon!
+          </p>
+        </div>
+      </section>
+
+      <section class="resume" id="resume">
+        <a href="resume"></a>
+        <div class="title">
+          <h2 class="name">Resume</h2>
+
+          <hr class="horizontal-blue" />
+
+          <iframe src="resume_luis_angel_maldonado.pdf" class="resume_pdf">
+            This browser does not support PDF's. Please
+            <a
+              href="https://docs.google.com/document/d/1wYrYnYXI8uHkAKtUfOK5vHAx5R1AV8QSO2JeS8b93aU/edit?usp=sharing"
+              >click here</a
+            >
+            to view it
+          </iframe>
+        </div>
+      </section>
+
+      <section class="contact" id="contact">
+        <a href="contact"></a>
+        <div class="title">
+          <h2 class="name">Contact me</h2>
+
+          <hr class="horizontal-blue" />
+        </div>
+
+        <div class="social_container">
+          <a href="https://www.facebook.com/luis.angel.3781995"
+            ><i class="fab fa-facebook-square"></i
+          ></a>
+          <a href="https://twitter.com/LuisAngelMCh"
+            ><i class="fab fa-twitter"></i
+          ></a>
+          <a href="https://github.com/lmaldonadoch"
+            ><i class="fab fa-github"></i
+          ></a>
+          <a href="https://www.linkedin.com/in/luis-angel-maldonado-5b503a1a3/"
+            ><i class="fab fa-linkedin-in"></i
+          ></a>
+          <a href="mailto: lmaldonadoch@gmail.com"
+            ><i class="fas fa-envelope"></i
+          ></a>
+        </div>
+      </section>
+    </div>
+    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
