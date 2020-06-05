@@ -15,6 +15,10 @@ a {
   text-decoration: none;
 }
 
+.md-none {
+  display: none;
+}
+
 .blue {
   color: #747fe0;
 }
@@ -167,9 +171,17 @@ main h3 {
   padding-left: 100px;
 }
 
+.semi-indented {
+  padding-left: 70px;
+}
+
 .linkedin {
   border: #0e76a8 2px solid;
   background: linear-gradient(45deg, transparent 50%, #0e76a8 50%);
+}
+
+.linkedin_span {
+  white-space: nowrap;
 }
 
 .github {
@@ -440,11 +452,12 @@ a {
   margin: 30px auto;
   width: 90%;
   max-width: 1200px;
+  padding: 15px;
 }
 
 .resume {
   position: relative;
-  margin-bottom: 1200px;
+  margin-bottom: 115vw;
 }
 
 .resume_pdf {
@@ -454,7 +467,7 @@ a {
   border: none;
   width: 90%;
   max-width: 950px;
-  min-height: 1150px;
+  min-height: 110vw;
 }
 
 .social_container {
@@ -491,4 +504,98 @@ a {
 
 .social_container .fa-envelope:hover {
   color: #d44638;
+}
+
+@media (max-width: 500px) {
+  .main-content-wrapper,
+  .main-content-wrapper a,
+  .indented,
+  .semi-indented {
+    font-size: 0.8rem;
+  }
+
+  .def-initialize {
+    padding-left: 35px;
+  }
+
+  h3 {
+    padding-left: 30px !important;
+  }
+
+  .indented {
+    padding-left: 70px;
+  }
+
+  .semi-indented {
+    padding-left: 35px;
+  }
+
+  .built-with {
+    justify-content: space-evenly;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    font-size: 15px;
+  }
+
+  .sm-none {
+    display: none;
+  }
+
+  .md-none {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    order: -2;
+  }
+
+  .indented {
+    padding-left: 30px;
+  }
+
+  .semi-indented {
+    padding-left: 35px;
+  }
+
+  .main-content-wrapper {
+    padding-left: 15px;
+  }
+
+  .big {
+    font-size: 1.5rem;
+  }
+
+  .project-wrapper {
+    flex-direction: column;
+    padding: 15px;
+    height: fit-content;
+  }
+
+  .project-image {
+    order: -1;
+    width: 100%;
+    margin: 15px 0;
+    min-height: 360px;
+    height: auto;
+    max-height: auto !important;
+  }
+}
+
+@media (max-width: 1000px) {
+  .project-wrapper {
+    flex-direction: column;
+    padding: 15px;
+    height: fit-content;
+  }
+
+  .project-image {
+    order: -1;
+    width: 100%;
+    margin: 15px 0;
+    min-height: 360px;
+    height: auto;
+    max-height: auto !important;
+  }
 }
