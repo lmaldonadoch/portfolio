@@ -12,7 +12,7 @@ I used state-of-the-art front end design tools such as CSS animations and transi
 
 ## Live version
 
-[Live Version]()
+[Live Version](http://www.lmaldonadoch.com)
 
 ## Built With
 
@@ -46,7 +46,7 @@ $ git clone git@github.com:lmaldonadoch/portfolio.git
 
 Contributions, issues and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/lmaldonadoch/HTML-CSS-Capstone/issues).
+Feel free to check the [issues page](https://github.com/lmaldonadoch/portfolio/issues).
 
 ## Show your support
 

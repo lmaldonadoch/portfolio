@@ -10,6 +10,10 @@ html {
   scroll-behavior: smooth;
 }
 
+.container {
+  position: relative;
+}
+
 a {
   color: #fff;
   text-decoration: none;
@@ -460,17 +464,28 @@ a {
 
 .resume {
   position: relative;
-  margin-bottom: 115vw;
+}
+
+.resume-container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
 }
 
 .resume_pdf {
   position: absolute;
   top: 100px;
-  margin: auto;
   border: none;
   width: 90%;
   max-width: 950px;
-  min-height: 110vw;
+  height: 110vw;
+  max-height: 985px !important;
+}
+
+.spacer {
+  width: 100px;
+  height: 125vw;
+  max-height: 1000px !important;
 }
 
 .social_container {
