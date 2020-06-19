@@ -31,7 +31,7 @@ a {
 body {
   color: #3c3f42;
   background: #f6f9fc;
-  font-family: "Muli", sans-serif;
+  font-family: 'Muli', sans-serif;
   font-size: 20px;
 }
 
@@ -73,7 +73,7 @@ nav a {
 }
 
 .nav-link:before {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   left: 0;
@@ -93,7 +93,7 @@ nav a {
 }
 
 .nav-link:after {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   left: 0;
@@ -219,7 +219,7 @@ main h3 {
 }
 
 .social-link:after {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   bottom: 0;
@@ -306,7 +306,7 @@ a {
 }
 
 .card-image {
-  height: 300px;
+  height: 335px;
   width: 260px;
   margin: auto;
 }
